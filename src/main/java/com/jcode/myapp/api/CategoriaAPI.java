@@ -70,14 +70,14 @@ public class CategoriaAPI extends HttpServlet {
                     BEAN_PAGINATION beanPagination = this.categoriaDAO.getPagination(getParameters(request));
                     BEAN_CRUD beanCrud = new BEAN_CRUD(beanPagination);
                     processCategoria(beanCrud, response);
-                    */
+                     */
                     processCategoria(new BEAN_CRUD(this.categoriaDAO.getPagination(getParameters(request))), response);
                     break;
                 case "addCategoria":
                     /*
                     BEAN_CRUD beanCrud = this.categoriaDAO.add(getCategoria(request), getParameters(request));
                     processCategoria(beanCrud, response);
-                    */
+                     */
                     processCategoria(this.categoriaDAO.add(getCategoria(request), getParameters(request)), response);
                     break;
                 case "updateCategoria":
@@ -87,7 +87,7 @@ public class CategoriaAPI extends HttpServlet {
                     processCategoria(this.categoriaDAO.delete(Integer.parseInt(request.getParameter("txtIdCategoriaER")), getParameters(request)), response);
                     break;
                 default:
-                    request.getRequestDispatcher("/jsp_app/categoria.jsp").forward(request, response);
+                    request.getRequestDispatcher("/jsp_app/mantenimiento/categoria.jsp").forward(request, response);
                     break;
             }
         } catch (SQLException ex) {

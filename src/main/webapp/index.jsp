@@ -45,7 +45,7 @@
                     <br>
                     <h6 class="text-center" style="color: aliceblue"><i class="fa fa-user"></i> <strong><%out.print(((com.jcode.myapp.model.session.Usuario) request.getSession().getAttribute("usuario")).getName_user());%></strong></h6>
                 </div>
-                <%@ include file="menu.jsp"%>
+                <jsp:include page="menu.jsp"/>
             </div>
             <!-- sidebar menu area end -->
             <!-- main content area start -->
@@ -81,7 +81,7 @@
             </div>
             <!-- main content area end -->
             <!-- footer area start-->
-            <%@ include file="footer.jsp"%>
+            <jsp:include page="footer.jsp"/>
             <!-- footer area end-->
         </div>
         <!-- page container area end -->

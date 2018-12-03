@@ -79,7 +79,7 @@ public class ProductoAPI extends HttpServlet {
                     processProducto(this.productoDAO.delete(Integer.parseInt(request.getParameter("txtIdProductoER")), getParameters(request)), response);
                     break;
                 default:
-                    request.getRequestDispatcher("/jsp_app/producto.jsp").forward(request, response);
+                    request.getRequestDispatcher("/jsp_app/mantenimiento/producto.jsp").forward(request, response);
                     break;
             }
         } catch (SQLException ex) {
