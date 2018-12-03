@@ -1,0 +1,183 @@
+
+.error-validation{
+    background: rgba(221, 14, 32, 1);
+    position:absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    right:3%; 
+    margin-top: -64px;
+    border-radius: 3px;
+    padding:4px;
+    display: none;
+}
+
+.error-validation-textarea{
+    background: rgba(221, 14, 32, 1);
+    position:absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    right:3%; 
+    margin-top: -114px;
+    border-radius: 3px;
+    padding:4px;
+    display: none;
+}
+
+.error-validation-file{
+    background: rgba(221, 14, 32, 1);
+    position:relative;
+    color: #FFFFFF;
+    font-size: 11px;
+    right:3%; 
+    margin-top: -78px;
+    border-radius: 3px;
+    padding:4px;
+    display: none;
+}
+
+.error-validation-login{
+    background: rgba(221, 14, 32, 1);
+    position:absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    right:3%; 
+    margin-top: -62px;
+    border-radius: 3px;
+    padding:4px;
+    display: none;
+}
+
+.error-validation-login-2 {
+    background: rgba(221, 14, 32, 1);
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    right: 3%;
+    margin-top: -2px;
+    border-radius: 3px;
+    padding: 4px;
+    display: none;
+}
+
+.error-validation-input-group{
+    background: rgba(221, 14, 32, 1);
+    position:absolute;
+    color: #FFFFFF;
+    font-size: 11px;
+    right:3%; 
+    margin-top: -34px;
+    border-radius: 3px;
+    padding:4px;
+    display: none;
+}
+
+.error-validation:after{
+    content:'';
+    border-color:rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width:8px 8px 0;
+    position:absolute;
+    display:block;
+    left:20px;
+    bottom:-4.5px;
+}
+
+.error-validation-file:after{
+    content:'';
+    border-color:rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width:8px 8px 0;
+    position:absolute;
+    display:block;
+    left:20px;
+    bottom:-4.5px;
+}
+
+.error-validation-login:after{
+    content:'';
+    border-color:rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width:8px 8px 0;
+    position:absolute;
+    display:block;
+    left:20px;
+    bottom:-4.5px;
+}
+
+.error-validation-login-2:after {
+    content: '';
+    border-color: rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 8px 8px -0;
+    position: absolute;
+    display: block;
+    left: 20px;
+    bottom: 20px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.error-validation-textarea:after {
+    content:'';
+    border-color:rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width:8px 8px 0;
+    position:absolute;
+    display:block;
+    left:20px;
+    bottom:-4.5px;
+}
+
+.error-validation-input-group:after {
+    content:'';
+    border-color:rgba(221, 14, 32, 1) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width:8px 8px 0;
+    position:absolute;
+    display:block;
+    left:20px;
+    bottom:-4.5px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #d6e9f3;
+    opacity: 1;
+}
+
+.select2-container--bootstrap.select2-container--disabled .select2-selection, .select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice{
+    background-color: #d6e9f3;
+    opacity: 1;
+}
+
+.modal-dialog-scroll{
+    overflow-y: initial !important;
+}
+
+.modal-body-scroll{
+    max-height: calc(100vh - 200px) !important;
+    overflow-y: auto;
+}
+
+.submodal-body-scroll{
+    max-height: calc(85vh - 200px) !important;
+    overflow-y: auto;
+}
+
+.loader-peam {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #71c44c; /* verde */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loader-peam_small {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #71c44c; /* verde */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
